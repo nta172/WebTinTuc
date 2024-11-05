@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteRule "trang-chu.html" "index.php" 
+RewriteRule "^([0-9+])/([a-zA-Z0-9-]+).html$" "tintuctheonhom.php?id_nhomtin=$1&ten_nhomtin=$2"
+RewriteRule "^([0-9]+)/([a-zA-Z0-9-]+).html$" "tintuc_chitiet.php?id_tin=$1&tieude=$2" 
+RewriteRule "^([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+).html$" "tintuctheoloai.php?id_loaitin=$1&ten_loaitin=$2"
